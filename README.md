@@ -1,7 +1,5 @@
 # MyAngularProject
 
-This is a sample Angular application developed for the hands-on examples on the [AWS CodePipeline Step by Step](https://www.udemy.com/course/aws-codepipeline-step-by-step/?referralCode=483BFB904E136DB2D86B) course by Emre Yilmaz.
-
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
