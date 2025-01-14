@@ -1,20 +1,19 @@
 version: 0.2
+
 phases:
   install:
     runtime-versions:
-      nodejs: 20
+      nodejs: 20 # Sử dụng Node.js phiên bản tương thích
     commands:
-      - npm install -g @angular/cli@17
+      - echo Installing dependencies...
+      - npm install
 
-  pre-build:
-    commands:
-      - npm install 
   build:
     commands:
-      # - ng build -c production
-      - ng build
+      - echo Building the Angular application...
+      - npm run build -- --configuration=production
 
 artifacts:
-  base-directory: dist/my-angular-project
   files:
     - '**/*'
+  base-directory: dist/my-angular-project # Thư mục output từ angular.json
